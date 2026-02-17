@@ -1,0 +1,43 @@
+body {
+    background-color: grey;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 50px;
+    height: 47px;
+    /* border: black solid; */
+}
+
+.search-bar {
+    background-color: white;
+    width: 0px;
+    height: 45px;
+    border:none;
+    outline:none;
+    padding-left: 10px;
+    transition : width 0.4s ease;
+    /* border: black solid; */
+}
+
+.hidden{
+    width: 200px;
+}
+
+input::placeholder {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: Black;
+
+}
