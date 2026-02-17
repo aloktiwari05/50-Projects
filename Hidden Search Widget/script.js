@@ -1,8 +1,9 @@
-const searchIcon = document.querySelector('.search-icon');
+const btn = document.querySelector('.btn');
 const searchBar = document.querySelector('.search-bar');
 
-function searchTransition(e){
-    searchBar.classList.toggle('hidden');
-}
-
-searchIcon.addEventListener('click',searchTransition);
+btn.addEventListener('click', () => {
+    searchBar.classList.toggle('expanded');
+    if (searchBar.classList.contains('expanded')) {
+        searchBar.focus();
+    }
+});
